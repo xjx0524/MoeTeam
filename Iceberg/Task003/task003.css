@@ -1,0 +1,57 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+div {
+    border:1px solid #999;
+    background-color: white;
+}
+
+#container{
+    min-width: 500px;
+    padding:20px;
+    margin:20px;
+    background-color: #eee;
+    overflow: hidden;
+    height:auto;
+}
+
+#left{
+    width:200px;
+    float:left;
+    margin-right:20px;
+    position: relative;
+}
+#left span{
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-weight: bold;
+}
+
+#middle{
+    overflow: hidden;
+    height:auto;
+    padding: 20px;
+    line-height:20px;
+}
+
+#right{
+    width: 80px;
+    float:right;
+    margin-left: 20px;
+    padding: 20px 20px 0px 20px;
+}
+
+.teamImg{
+    width:80px;
+    height:80px;
+    margin:20px;
+}
+.perImg{
+    width:80px;
+    height:80px;
+    margin-bottom: 20px;
+}
