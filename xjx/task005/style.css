@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+#container {
+    background-color: #eee;
+}
+
+header {
+    height: 60px;
+    background-color: #515151;
+}
+
+header div {
+    display: inline-block;
+}
+
+.header-left img {
+    margin: 10px 25px;
+}
+
+.header-right {
+    float: right;
+    font-size: 16px;
+}
+
+.header-right li {
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-right: 15px;
+}
+
+.header-right li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-right li a:hover {
+    color: gray;
+}
+
+#main {
+    margin-right: 420px;
+}
+
+article {
+    background-color: white;
+    margin: 20px 20px 0;
+    padding: 30px 20px;
+    box-shadow: 1px 1px 3px;
+    overflow: auto;
+}
+
+article h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 18px;
+}
+
+article .description {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+article p, article img {
+    margin: 10px 0;
+    text-indent: 2em;
+}
+
+article .img-wrapper {
+    float: left;
+    border: 1px solid gray;
+    border-radius: 1px;
+    width: 200px;
+    padding: 16px;
+    text-align: center;
+    margin: 0 20px 20px 0;
+}
+
+article .img-wrapper img {
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+article ol li {
+    margin-left: 40px;
+}
+
+article table {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-collapse:collapse;
+    width: 100%;
+}
+
+article thead {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+article tfoot {
+    background-color: #ddd;
+}
+
+article th, article td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+#side {
+    background-color: white;
+    margin: 20px 20px;
+    padding: 30px 20px;
+    float: right;
+    width: 400px;
+    box-shadow: 1px 1px 3px;
+}
+
+#side h2 {
+    margin-bottom: 10px;
+    border-left: 4px solid #ddd;
+    padding: 5px;
+}
+
+#side #form td {
+    padding: 10px;
+}
+
+#side #form td.hint {
+    color: #ccc;
+    font-size: 12px;
+}
+
+#side #form td.label {
+    text-align: right;
+}
+
+#side #form textarea {
+    width: 200px;
+    height: 100px;
+}
+
+#side #submit-btn {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    padding: 25px;
+}
