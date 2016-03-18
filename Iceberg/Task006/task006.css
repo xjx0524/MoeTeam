@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div{
+/*
+    border:1px dashed #f00; /* to be neglected in the future*/
+
+}
+
+#container{
+    width: 980px;
+    height:1386px;
+    margin:0 auto;
+
+}
+
+#header{
+    width: 892px;
+    height:61px;
+    margin:0 auto;
+    border-bottom:2px solid #938e80;
+    position: relative;
+}
+#header p{
+    font:12px "黑体";
+    color: #d45d5c;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+#header #header_left{
+    height: 61px;
+    width:110px;
+    background-color: #d45d5c;
+    position: relative;
+}
+#header #header_left p{
+    font:12px "黑体";
+    color:#ffffff;
+    position: absolute;
+    left:10px;
+    bottom:10px;
+}
+
+#contentFirst{
+    width: 892px;
+    height: 301px;
+    margin:20px auto;
+}
+#contentFirst_right{
+    height:301px;
+    width:203px;
+    float:right;
+    border-top: 2px solid #cc8090;
+}
+#contentFirst_right .lineOne{
+    font:24px "微软雅黑" ;
+    text-decoration: underline;
+    line-height:40px;
+}
+p.lineOne:first-letter{
+    font-size: 32px;
+}
+#contentFirst_right .lineTwo{
+    font:italic 12px "楷体";
+    color: #676767;
+    line-height:10px;
+}
+#contentFirst_right .lineThree{
+    font:italic bold 105px "微软雅黑" ;
+    color:#75b86b;
+}
+#contentFirst_right .lineFour{
+    font:55px "微软雅黑";
+    color:#cc8091;
+    float:left;
+}
+#contentFirst_right .lineFive{
+    float:left;
+    margin:17px 0 0 10px;
+}
+#contentFirst_right .lineFive .spanOne{
+    font:21px "微软雅黑";
+    color:#cc8091;
+    display: block;
+}
+#contentFirst_right .lineFive .spanTwo{
+    font:12px "微软雅黑";
+    color:#cc8091;
+}
+
+#contentSecond{
+    width: 892px;
+    height: 250px;
+    margin:20px auto;
+}
+#contentSecond .myText{
+    width:260px;
+    margin-right:20px;
+    font: 12px "宋体";
+    line-height: 22px;
+    color:#767777;
+    float:left;
+}
+#contentSecond .myText .hLeft{
+    font: bold 16px "微软雅黑" ;
+    text-decoration: underline;
+    color:#418c59;
+}
+#contentSecond .myText .hMiddle{
+    font: bold 16px "微软雅黑" ;
+    text-decoration: underline;
+    color:#d2994f;
+}
+#contentSecond .myText .hRight{
+    font: bold 16px "微软雅黑" ;
+    text-decoration: underline;
+    color:#cc7680;
+
+}
+#contentSecond .myText .corner{
+    margin-top:30px;
+    font: 12px "微软雅黑";
+    color: #231815;
+    opacity: 0.7;
+}
+#contentSecond .myText .corner span{
+    color:#cd4a48;
+    font: italic 12px "微软雅黑";
+}
+
+#contentThird{
+    width: 892px;
+    height: 600px;
+    margin:20px auto;
+    position: relative;
+}
+#contentThird .contentLeft{
+    width:420px;
+}
+#contentThird .contentLeft .conLeftTop{
+    font:bold 42px "黑体";
+    color: #11456b;
+    padding-bottom: 10px;
+    border-bottom:2px solid #11456b;
+}
+#contentThird .contentLeft .conLeftTop span{
+    font:italic bold 72px "黑体";
+    color:#f5e327;
+}
+#contentThird .contentLeft .conLeftTop .chinese{
+    font:bold 33px "黑体";
+}
+#contentThird .contentLeft .conLeftBottom{
+    font:12px "宋体";
+    color:#767777;
+    line-height: 22px;
+    padding-top: 20px;
+
+}
+#contentThird .contentLeft .conLeftBottom span{
+    font:70px "微软雅黑";
+    color:#f5e327;
+    float:left;
+    margin: -10px 10px 0 0;
+}
+#contentThird .contentLeft .conLeftBottom .myIndent{
+    text-indent: 2em;
+}
+#contentThird .contentLeft .conLeftBottom img{
+    height: 300px;
+    float:right;
+    margin:10px 5px 0 10px;
+}
+#contentThird .contentRight{
+    position: absolute;
+    top:0;
+    right:0;
+}
+#contentThird .contentRight .conRightTop{
+    margin:0 0 20px 10px;
+    width: 458px;
+    height: 260px;
+    background: url("./material/纯阳宫.jpg");
+    position: relative;
+}
+#contentThird .contentRight .conRightTop .rightTopTitle{
+    width: 458px;
+    height:61px;
+    background-color: rgba(25,25,25,0.5);
+    position:absolute;
+    bottom:0px;
+}
+#contentThird .contentRight .conRightTop .rightTopTitle p{
+    font:26px "微软雅黑";
+    color: #ffffff;
+    border-left: 3px solid #72b16a;
+    padding:10px;
+    margin-left: 50px;
+}
+#contentThird .contentRight .conRightTop .rightTopTitle span{
+    font:italic 12px "微软雅黑";
+    color:#72b16a;
+    letter-spacing: 5px;
+}
+#contentThird .contentRight .conRightBottom{
+    width:459px;
+    height:318px;
+    background-color: #ffe17e;
+    margin-left:10px;
+    padding-top: 30px;
+    position: relative;
+}
+#contentThird .contentRight .conRightBottom p{
+    font:16px "宋体";
+    color:#5a5b5b;
+    margin: 0 0 20px 40px;
+}
+#contentThird .contentRight .conRightBottom span{
+    font:italic 12px "宋体";
+}
+#contentThird .contentRight .conRightBottom .rightBottomLeft{
+    width: 260px;
+    height: 160px;
+    background-color: #ff5d5c;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+#contentThird .contentRight .conRightBottom .rightBottomLeft .zero{
+    font:110px "微软雅黑";
+    color:#ffffff;
+    float:left;
+    margin-left: 10px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomLeft .line{
+    width: 4px;
+    height:86px;
+    background-color: #ffffff;
+    float:left;
+    margin: 32px 10px 0 5px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomLeft .hello{
+    margin-top: 32px;
+    font:italic 21px "黑体";
+    color:#ffffff;
+    line-height: 24px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomLeft .hello span{
+    font:12px "黑体";
+    color: #ffffff;
+    line-height: 6px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomRight{
+    width:199px;
+    height:160px;
+    font:italic 14px "黑体";
+    color:#5a5b5b;
+    line-height: 16px;
+    position: absolute;
+    right:0;
+    bottom:-10px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomRight p{
+    margin-left: 20px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomRight .quoteLeft{
+    font:72px "黑体";
+    color:#d45d5c;
+    position: absolute;
+    top:-15px;
+    left:-20px;
+}
+#contentThird .contentRight .conRightBottom .rightBottomRight .quoteRight{
+    float:right;
+    font:72px "黑体";
+    color:#d45d5c;
+}
+#footer{
+    width: 892px;
+    height: 20px;
+    border-top:1px solid #938e8c;
+    margin:80px auto;
+}
+#footer p{
+    font:12px "黑体";
+    color: #d45d5c;
+    float:right;
+}
