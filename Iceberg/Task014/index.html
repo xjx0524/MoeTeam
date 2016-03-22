@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task201</title>
+    <script type="text/javascript">
+        var aqiData = [
+          ["北京",90],
+          ["上海",50],
+          ["福州",10],
+          ["广州",50],
+          ["程度",90],
+          ["西安",100]
+        ];
+
+        function myfunc(){
+            var theinput = document.getElementById("myinput").value;
+            document.getElementById("mytext").innerHTML = theinput;
+        }
+        /*二维数组降序排序*/
+        function sortfunc(a, b){
+            return b[1] - a[1];
+        }
+        /*计算空气质量的排序函数*/
+        function aircal(){
+            var buffer = [];
+            var j = 0;
+            for(var i=0; i<aqiData.length; i++)
+            {
+                if(aqiData[i][1]>10)
+                {
+                    buffer[j++]=aqiData[i];
+                }
+            }
+            buffer.sort(sortfunc);
+            var myul = "";
+            for(var i=0; i<buffer.length; i++)
+            {
+                myul += "<li>第"+ (i+1) +"名："+buffer[i][0]+" , "+buffer[i][1]+"</li>"
+            }
+            document.getElementById("aqi-list").innerHTML = myul;
+        }
+
+    </script>
+</head>
+<body>
+    <label>请输入北京今天的空气质量：<input id="myinput" type="text" placeholder="请输入内容"></label>
+    <input type="button" onclick="myfunc()" value="确定">
+    <div>您输入的值是：<span id="mytext">尚无输入</span></div>
+    <br>
+    <input type="button" onclick="aircal()" value="查看空气质量大于10的排行榜">
+    <ul id="aqi-list"></ul>
+</body>
+</html>
+<!--
+@Author:Iceberg
+@Date:2016-03-22
+-->
