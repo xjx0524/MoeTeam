@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#myTable{
+    margin:20px;
+    font:20px "黑体";
+}
+thead{
+    font:25px "黑体";
+    color: white;
+    background-color: black;
+}
+tbody tr:nth-child(even){
+    background-color: darkgrey;
+}
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+tbody tr:nth-child(1),tr:nth-child(2),tr:nth-child(3){
+    color: #f00;
+}
+
+#myInput input{
+    margin:20px;
+    border: 3px solid #000;
+    width: 200px;
+    height:30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: grey;
+    transition: width 2s, border 2s, background-color 2s;
+}
+#myInput input:hover{
+    width:400px;
+    border: 3px solid #0ff;
+    background-color: #fff;
+}
+
+#myBanner{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+.bannerImg{
+    width:300px;
+    height:200px;
+    list-style-type: none;
+    /*这里使用绝对定位使得li放到浏览器可视区域外，松开下面的注释即可明白原理*/
+    /*margin-left: 600px;*/
+    position: absolute;
+    -webkit-animation:mySlide 10s infinite;
+    -o-animation:mySlide 10s infinite;
+    animation:mySlide 10s infinite;
+}
+.bannerImg li{
+    float:right;
+    position: absolute;/*必须有，否则动画中left top无效*/
+    width:300px;
+    height:200px;
+}
+.bannerOne{
+    left:0;
+    background-color: #f00;
+}
+.bannerTwo{
+    left:-300px;
+    background-color: #0f0;
+}
+.bannerThree{
+    left:-600px;
+    background-color: #00f;
+}
+
+a {
+    margin: 10px;
+    width:20px;
+    height:20px;
+    text-align: center;
+    background-color: bisque;
+    opacity:0.5;
+    text-decoration: none;
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+}
+.btnOne {
+    right:60px;
+}
+.btnTwo {
+    right:30px;
+}
+.btnThree {
+    right:0px;
+}
+.btnOne:hover ~ ul {
+    animation: none !important;
+    transform: translate(0%);
+}
+.btnTwo:hover ~ ul {
+    animation: none !important;
+    transform: translate(100%);
+}
+.btnThree:hover ~ ul {
+    animation: none !important;
+    transform: translate(200%);
+}
+
+@keyframes mySlide {
+    0% { transform:translate(0px); }
+    33% { transform:translate(300px); }
+    66% { transform:translate(600px); }
+    100% { transform:translate(0px); }
+}
+@-webkit-keyframes mySlide {
+    0% { transform:translate(0px); }
+    33% { transform:translate(300px); }
+    66% { transform:translate(600px); }
+    100% { transform:translate(0px); }
+}
