@@ -1,0 +1,75 @@
+body, html, #root {
+    width: 100%;
+    height: 100%;
+}
+
+body, div, span, a, img, h1, h2, h3, h4, h5 {
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+    align-content: flex-start;
+
+    border: 0 solid black;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    position: relative;
+}
+
+body {
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red {
+    border: 1px solid red;
+}
+
+.blue {
+    border: 1px solid blue;
+}
+
+#rect1 {
+    width: 150px;
+    height: 120px;
+}
+
+#rect2 {
+    width: 150px;
+    height: 100px;
+}
+
+#rect3 {
+    width: 150px;
+    height: 40px;
+}
+
+#rect4 {
+    width: 150px;
+    height: 200px;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+    .blue {
+        order: 1;
+    }
+
+    .red {
+        order: 2;
+    }
+}
