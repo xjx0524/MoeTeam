@@ -29,8 +29,8 @@ function trim(str){
  */
 function addAqiData() {
     //获取数据并清除两端空格
-    var tempCity = document.getElementById("aqi-city-input").value.trim();
-    var tempNum = document.getElementById("aqi-value-input").value.trim();
+    var tempCity = trim(document.getElementById("aqi-city-input").value);
+    var tempNum = trim(document.getElementById("aqi-value-input").value);
     var regCity = /[\u4E00-\u9FA5]/g;
     var regNum = /^[0-9]+.?[0-9]*$/;
     if(!regCity.test(tempCity)){
