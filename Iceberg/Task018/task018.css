@@ -31,6 +31,7 @@
     color: #fff;
     font-weight: bold;
     font-size:25px;
+    border-radius: 10px;
     cursor: pointer;
     animation: myanim 2s;
 }
@@ -42,6 +43,7 @@
     height: 50px;
     margin: 10px;
     font:20px "黑体";
+    border-radius: 10px;
     background-color: chartreuse;
 }
 [id*=btn]:hover{
@@ -52,6 +54,7 @@
     height:50px;
     margin:30px 10px 0 30px;
     text-align: center;
+    border-radius: 10px;
     font:20px "黑体" ;
 }
 
